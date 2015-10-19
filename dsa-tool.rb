@@ -8,10 +8,11 @@ class DsaTool < Formula
   version "0.0.1"
 
   depends_on "dart"
+  depends_on "coreutils"
 
   def install
     system "pub", "get"
-    system "cp", "-Lr", "packages/", "pkgs/"
+    system "gcp", "-Lr", "packages/", "pkgs/"
     system "rm", "-r", "packages/"
     system "mv", "pkgs", "packages"
     libexec.install Dir["*"]
