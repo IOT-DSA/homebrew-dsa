@@ -10,6 +10,10 @@ class DsaTool < Formula
   depends_on "dart"
 
   def install
+    system "pub", "get"
+    system "cp", "-Lr", "packages/", "pkgs/"
+    system "rm", "-r", "packages/"
+    system "mv", "pkgs", "packages"
     libexec.install Dir["*"]
     (bin + "dsa").write shim_script "bin/dsa.dart"
   end
