@@ -1,6 +1,6 @@
 require 'formula'
 
-class Etl < Formula
+class DsaTool < Formula
   desc "DSA Development Tool"
   homepage "https://github.com/IOT-DSA/tool"
   url "https://github.com/IOT-DSA/tool/releases/download/v0.0.1/tool.zip"
