@@ -3,6 +3,8 @@ require 'formula'
 class DsaTool < Formula
   desc "DSA Development Tool"
   homepage "https://github.com/IOT-DSA/tool"
+
+  head "https://github.com/IOT-DSA/tool.git"
   url "https://github.com/IOT-DSA/tool/releases/download/v0.0.1/tool.zip"
   sha256 "071b361b369bb209fb7a7a1658b6c7548cc6ce60145ba20f0039c085a742abcd"
   version "0.0.1"
