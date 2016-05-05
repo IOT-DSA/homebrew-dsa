@@ -24,7 +24,7 @@ class DsaTool < Formula
   def shim_script target
     <<-EOS.undent
       #!/bin/bash
-      dart "#{libexec}/#{target}" $@
+      exec dart "#{libexec}/#{target}" "${@}"
     EOS
   end
 
